@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifneq ($(WITH_LINEAGE_CHARGER),false)
+ifneq ($(WITH_HAVOC_CHARGER),false)
 PRODUCT_PACKAGES += \
     lineage_charger_animation \
     lineage_charger_animation_vendor
@@ -49,7 +49,7 @@ endif
 
 # Legal
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.havoclegal.url=https://havocoos.org/legal
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \

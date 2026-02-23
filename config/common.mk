@@ -4,7 +4,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # Allow vendor prebuilt repos to exclude themselves from bp scanning
 -include $(sort $(wildcard vendor/*/*/exclude-bp.mk))
 
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= HavocOOS
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -101,7 +101,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
+ifneq ($(TARGET_DISABLE_HAVOC_SDK), true)
 # Lineage SDK
 include vendor/lineage/config/lineage_sdk_common.mk
 endif
